@@ -1,0 +1,266 @@
+.home-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    gap: var(--gap);
+    height: 80vh;
+}
+
+
+.home-text-content,
+.home-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: #cececeee;
+    
+}
+
+
+.home-text-content h6 {
+    font-size: 3rem;
+}
+
+.home-img img {
+    max-width: 100%;
+    height: 80vh;
+
+}
+
+.banner-buttons {
+    display: flex;
+    margin-top: 3em;
+    cursor: pointer;
+    position: relative;
+}
+
+.button-padrao-orange {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 1em;
+    margin-top: 20px;
+    position: absolute;
+
+}
+
+.button-padrao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 214px;
+    height: 50px;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0 / 20%);
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    box-shadow: 0 0 10px var(--primary-color), 0 0 15px var(--white-color), 0 0 30px var(--primary-color);
+    text-align: center;
+    transition: all 0.3s;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    transition: .2s;
+}
+
+
+.button-padrao:hover {
+    background: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color), 0 0 15px var(--white-color), 0 0 30px var(--primary-color);
+    color: var(--white-color);
+    transition-delay: .1s;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    padding: 60px 15%;
+    background-color: var(--white-color);
+}
+
+.profile-img img {
+    height: 360px;
+    border-radius: 100%;
+    border: 2px solid var(--primary-color);
+    margin-right: 50px;
+    box-shadow: 0 0 10px var(--primary-color), 0 0 15px var(--white-color), 0 0 30px var(--primary-color);
+}
+
+.profile-img img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0 0 10px var(--primary-color), 0 0 15px var(--white-color), 0 0 30px var(--primary-color);
+}
+
+.profile-text-content h2 {
+    color: var(--primary-color);
+    font-size: 75px;
+}
+
+.profile-text-content p {
+    color: var(--primary-color);
+    font-size: 22px;
+    max-width: 900px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.profile-text-content button {
+    color: #191919;
+    height: 90px;
+    width: 300px;
+    font-size: 26px;
+    font-weight: 700;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0 / 20%);
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color), 0 0 15px var(--white-color), 0 0 30px var(--primary-color);
+    transition: all 0.3s;
+    border-radius: 50px;
+    transition: .2s;
+}
+
+.profile-text-content button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white-color);
+    height: 60px;
+    width: 150px;
+    cursor: pointer;
+
+}
+
+.profile-text-content button:hover {
+    background-color: var(--white-color);
+    border: 4px solid var(--primary-color);
+    color: var(--white-color);
+    transition: 0.8s;
+    box-shadow: 0 0 10px var(--primary-color), 0 0 15px var(--white-color), 0 0 30px var(--primary-color);
+    cursor: pointer;
+}
+
+.profile-text-content button a:hover {
+    color: var(--primary-color);
+}
+
+.projects-content {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.projects-content h1 {
+    color: #cececeee;
+    font-size: 40px;
+    text-align: center;
+    padding: 22px;
+}
+
+.card {
+    background-color: var(--white-color);
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
+
+}
+
+.card img {
+    align-content: center;
+    height: 150px;
+    width: auto;
+}
+
+
+.card h5 {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.card p {
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.card a {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.card a:hover {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: 0.6s;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: var(--white-color);
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer h5 {
+    color: var(--primary-color);
+    font-size: 39px;
+}
+
+footer p {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 14px;
+}
+
+.footer span {
+    color: #191919;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social img {
+    height: 36px;
+    border-radius: 50%;
+}
+
+.social a {
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: 1s;
+}
