@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resolução</title>
+    <meta charset="utf-8">
+  </head>
+    <body>
+        <script type="text/javascript">
+        function calculateBillingStats(billing) {
+        const n = billing.length;
+        let lowest = billing[0];
+        let highest = billing[0];
+        let total = 0;
+  for (let i = 0; i < n; i++) {
+    if (billing[i] < lowest) {
+      lowest = billing[i];
+    }
+    if (billing[i] > highest) {
+      highest = billing[i];
+    }
+    total += billing[i];
+  }
+        const average = total / n;
+        let count = 0;
+  for (let i = 0; i < n; i++) {
+    if (billing[i] > average) {
+      count++;
+    }
+  }
+  return { lowest, highest, count };
+}
+
+    function main(billing) {
+  const { lowest, highest, count } = calculateBillingStats(billing);
+  console.log(`Lowest billing amount: ${lowest}`);
+  console.log(`Highest billing amount: ${highest}`);
+  console.log(`Number of days with billing higher than the monthly average: ${count}`);
+}
+
+// exemplo
+const billing = [100, 80, 120, 90, 110, 130, 70, 150, 100, 90, 80, 110];
+main(billing);
+
+        </script>
+    </body>
+</html>
